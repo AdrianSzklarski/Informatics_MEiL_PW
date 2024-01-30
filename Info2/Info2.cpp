@@ -31,4 +31,10 @@ int main(void)
 	}
 	fclose(dane);
 	l_row = i / 4;
+
+	// Display the number of elements and the number of rows on the screen 
+	printf("Number of elements in the file: %d\n", i);
+	printf("Number of lines in the file   : %d\n", l_row);
+
+
 }
