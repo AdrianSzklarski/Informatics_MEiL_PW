@@ -10,8 +10,7 @@ int main(void)
 
 	// *ax, *ay, *az - accelerations
 	// sr_ax, sr_ay, sr_az - average accelerations
-	float temp;
-	// float *t, *ax, *ay, *az, temp, sr_ax, sr_ay, sr_az;
+	float temp, *t, *ax, *ay, *az, sr_ax, sr_ay, sr_az;
 
 	// File declaration and opening
 	FILE* dane, * wyniki;
@@ -35,6 +34,13 @@ int main(void)
 	// Display the number of elements and the number of rows on the screen 
 	printf("Number of elements in the file: %d\n", i);
 	printf("Number of lines in the file   : %d\n", l_row);
+
+	// Allocation (memory allocation) of vectors
+	t = (float*)malloc(l_row * sizeof(float));
+	ax = (float*)malloc(l_row * sizeof(float));
+	ay = (float*)malloc(l_row * sizeof(float));
+	az = (float*)malloc(l_row * sizeof(float));
+
 
 
 }
