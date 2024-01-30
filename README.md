@@ -4,7 +4,7 @@
 <p><p>
 
 
-<h1 align="center">**
+<h3 align="center">**
 
 <p>
 Dany jest plik tekstowy dane.dat zawierający dane: czas [s] oraz 3 przyspieszenia ax, ay i az. Należy 
