@@ -10,7 +10,7 @@ int main(void)
 
 	// *ax, *ay, *az - accelerations
 	// sr_ax, sr_ay, sr_az - average accelerations
-	float temp, *t, *ax, *ay, *az, sr_ax, sr_ay, sr_az;
+	float temp, * t, * ax, * ay, * az;//, sr_ax, sr_ay, sr_az;
 
 	// File declaration and opening
 	FILE* dane, * wyniki;
@@ -41,6 +41,15 @@ int main(void)
 	ay = (float*)malloc(l_row * sizeof(float));
 	az = (float*)malloc(l_row * sizeof(float));
 
+	// Loading vectors and displaying them on the screen
+	printf("t\t\t ax\t\t ay\t\t az\t\n");
+	for (i = 0; i < l_row; i++)
+	{
+		fscanf(dane, "%f %f %f %f", &t[i], &ax[i], &ay[i], &az[i]);
+		printf("%5.2f\t %5.2f\t %5.2f\t %5.2f\n", t[i] / 1000, ax[i], ay[i], az[i]);
+	}
+	// Closing the file
+	fclose(dane);
 
 
 }
