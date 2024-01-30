@@ -61,5 +61,10 @@ int main(void)
 	printf("Average acceleration ax=%f\n Average acceleration ay=%f\n Average acceleration az=%f\n", sr_ax, sr_ay, sr_az);
 	fprintf(our_results, "%f\t %f\t %f\t", sr_ax, sr_ay, sr_az);
 
-
+	// Releasing vector memory and closing files
+	free(t);
+	free(ax);
+	free(ay);
+	free(az);
+	fclose(our_results);
 }
