@@ -4,7 +4,7 @@
 <p><p>
 
 
-<h3 align="center">**
+<h5 align="center">**** Task 1 ****
 
 <p>
 Dany jest plik tekstowy dane.dat zawierający dane: czas [s] oraz 3 przyspieszenia ax, ay i az. Należy 
@@ -18,7 +18,7 @@ ax, ay, az,
 Następnie należy wykonać w programie Excel wykresy, na których należy zamieścić przebiegi 
 przyspieszeń ax, ay i az oraz nanieść wyliczone średnie przyspieszenia.
 </p>
-
+---- English ----
 <p>
 Given a text file data.dat containing data: time [s] and 3 accelerations ax, ay and az. You should write a program that:
 
@@ -33,7 +33,6 @@ accelerations of ax, ay and az and plot the calculated average accelerations.
 
 
 
-**<a href="#Up"> Up </a></h1>  
   
 ## Technologies:
 <ul>
