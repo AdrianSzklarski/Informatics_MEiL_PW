@@ -6,10 +6,11 @@
 int main(void)
 {
 	// Declaration of variables 
-	// int i, l_row;  // i - for loop, l_row from *.*dat
+	int i, l_row;  // i - for loop, l_row from *.*dat
 
 	// *ax, *ay, *az - accelerations
 	// sr_ax, sr_ay, sr_az - average accelerations
+	float temp;
 	// float *t, *ax, *ay, *az, temp, sr_ax, sr_ay, sr_az;
 
 	// File declaration and opening
@@ -22,5 +23,12 @@ int main(void)
 	}
 	wyniki = fopen("results.dat", "wt");
 
-
+	// Calculating the number of elements and the number of rows in an input file
+	i = 0;
+	while (fscanf(dane, "%f", &temp) != EOF)
+	{
+		i++;
+	}
+	fclose(dane);
+	l_row = i / 4;
 }
