@@ -2,6 +2,7 @@
 
 #include "stdio.h"
 #include "stdlib.h"
+#include "Average.h"
 
 int main(void)
 {
@@ -10,17 +11,16 @@ int main(void)
 
 	// *ax, *ay, *az - accelerations
 	// sr_ax, sr_ay, sr_az - average accelerations
-	float temp, * t, * ax, * ay, * az;//, sr_ax, sr_ay, sr_az;
+	float temp, * t, * ax, * ay, * az, sr_ax, sr_ay, sr_az;
 
 	// File declaration and opening
-	FILE* dane, * wyniki;
+	FILE* dane, *our_results;
 	dane = fopen("dane.dat", "rt");
 	if (!dane)
 	{
 		printf("Data.dat file missing\n");
 		exit(0);
 	}
-	wyniki = fopen("results.dat", "wt");
 
 	// Calculating the number of elements and the number of rows in an input file
 	i = 0;
@@ -50,6 +50,16 @@ int main(void)
 	}
 	// Closing the file
 	fclose(dane);
+
+	// Calculation of averages - calling the Average() function
+	sr_ax = average(ax, l_row);
+	sr_ay = average(ay, l_row);
+	sr_az = average(az, l_row);
+
+	// View averages and write to the resulting file
+	our_results = fopen("results.dat", "wt");
+	printf("Average acceleration ax=%f\n Average acceleration ay=%f\n Average acceleration az=%f\n", sr_ax, sr_ay, sr_az);
+	fprintf(our_results, "%f\t %f\t %f\t", sr_ax, sr_ay, sr_az);
 
 
 }
