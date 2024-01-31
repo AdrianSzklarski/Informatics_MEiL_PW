@@ -41,6 +41,4 @@ accelerations of ax, ay and az and plot the calculated average accelerations.
 <p>Windows</p>
 </ul>
 
-## Author:
-Programme code written by A.Szklarski 12.2024r.
 
