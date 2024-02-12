@@ -30,8 +30,18 @@ ax, ay, az,
 Then make graphs in Excel, on which the waveforms should be included 
 accelerations of ax, ay and az and plot the calculated average accelerations.
 </p>
+<br>
+<h5 align="center">**** Task 2 ****
 
+1. użycie metody prostokątów, trapezów i Simpsona do obliczenia całki oznaczonej.
+2. zbadanie wielkości błędu tych metod w funkcji kroku całkowania.
+</p>
+---- English ----
+<p>
+1. using the method of rectangles, trapezoids and Simpson's method to calculate the marked integral.
+2. examine the magnitude of the error of these methods as a function of the integration step.
 
+Task2_Describe.pdf
 
   
 ## Technologies:
