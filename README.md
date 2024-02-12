@@ -51,6 +51,4 @@ Task2_Describe.pdf
 <p>Windows</p>
 </ul>
 
-## Author:
-Programme code written by A.Szklarski 12.2024r.
 
